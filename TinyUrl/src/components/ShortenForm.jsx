@@ -20,10 +20,10 @@ const ShortenForm = () => {
   };
 
   return (
-    <div className="w-full max-w-187.5">
+    <div className="w-125 shrink-0 overflow-hidden rounded-xl bg-[#f7f8fa] text-black shadow-lg">
       <Tabs tabs={TABS} active={tab} onChange={setTab} />
 
-      <form onSubmit={handleSubmit} className="rounded-b-xl bg-[#f7f8fa] px-7 pb-8 pt-7">
+      <form onSubmit={handleSubmit} className="p-5">
         <FormField id="longUrl" label="Long URL" icon={<SendIcon />} required>
           <input
             id="longUrl"
@@ -36,14 +36,14 @@ const ShortenForm = () => {
           />
         </FormField>
 
-        <div className="mt-8 grid grid-cols-[1fr_auto_1fr] items-start gap-x-3">
+        <div className="mt-5 grid grid-cols-[1fr_auto_1fr] items-start gap-x-3">
           <FormField id="domain" label="Domain" icon={<GlobeIcon />}>
             <div className="relative">
               <select
                 id="domain"
                 value={domain}
                 onChange={(e) => setDomain(e.target.value)}
-                className={`${inputClass} appearance-none pr-12`}
+                className={`${inputClass} appearance-none pr-10`}
               >
                 <option value="tinyurl.com">tinyurl.com</option>
               </select>
@@ -51,9 +51,14 @@ const ShortenForm = () => {
             </div>
           </FormField>
 
-          <span className="pt-[3.35rem] text-2xl text-gray-900">/</span>
+          <span className="pt-9.75 text-2xl leading-8 text-gray-900">/</span>
 
-          <FormField id="alias" label="Alias (optional)" icon={<MarkerIcon />} hint="Must be at least 5 characters">
+          <FormField
+            id="alias"
+            label="Alias (optional)"
+            icon={<MarkerIcon />}
+            hint="Must be at least 5 characters"
+          >
             <input
               id="alias"
               type="text"
@@ -68,12 +73,12 @@ const ShortenForm = () => {
 
         <button
           type="submit"
-          className="mt-8 w-full rounded-md bg-[#218347] py-3.5 text-xl font-medium text-white transition-colors hover:bg-[#1b6c3b] focus:outline-none focus:ring-2 focus:ring-[#218347]/50"
+          className="mt-6 h-10 w-full rounded bg-[#218347] text-lg font-medium text-white transition-colors hover:bg-[#1b6c3b] focus:outline-none focus:ring-2 focus:ring-[#218347]/50"
         >
           Shorten Link
         </button>
 
-        <p className="mt-6 text-base italic text-gray-900">
+        <p className="mt-3 text-[13px] italic leading-snug text-gray-900">
           By clicking Shorten Link, you agree with our{" "}
           <a href="#" className="text-[#0d7894] hover:underline">Terms of Service</a>,{" "}
           <a href="#" className="text-[#0d7894] hover:underline">Privacy Policy</a>, and{" "}

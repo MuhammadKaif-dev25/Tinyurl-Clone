@@ -4,7 +4,7 @@ import ShortenForm from './ShortenForm'
 const HeroRight = () => {
   return (
     <div>
-         <div className="flex h-full items-center justify-center">
+         <div className="flex h-100 items-center justify-center">
       <ShortenForm />
     </div>
     </div>

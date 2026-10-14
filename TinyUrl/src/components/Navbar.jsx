@@ -2,12 +2,12 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <div>
-            <nav className="flex items-center justify-between px-8 py-5 bg-linear-to-r from-[#0e7490] to-[#002444]">
-                <div className="flex items-center gap-10 ">
+        <div className="sticky top-0">
+            <nav className="flex items-center justify-between px-12 py-3 bg-linear-to-r from-[#0e7490] to-[#002444]">
+                <div className="flex items-center gap-9 ">
                     <a
                         href="/"
-                        className="font-['Bungee'] text-4xl tracking-wider text-white uppercase"
+                        className="font-['Bungee'] text-[31px] tracking-wider text-white uppercase"
                     >
                         TinyURL
                     </a>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     </a>
                     <a
                         href="#"
-                        className="px-5 py-2.5 rounded-md bg-[#0e7490] text-lg hover:bg-[#0c6178] transition"
+                        className="px-3 py-1.5 rounded-md bg-[#0e7490] text-lg hover:bg-[#0c6178] transition"
                     >
                         Sign Up
                     </a>
