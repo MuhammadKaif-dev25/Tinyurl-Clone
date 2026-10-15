@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.feature-color:hover {
+    background-color: #e6f2f6;
+  }

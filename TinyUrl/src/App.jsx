@@ -2,6 +2,12 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Plans from './components/Plans';
+import Hero2 from './components/Hero2';
+import Hero3 from './components/Hero3';
+import FeaturesSection from './components/FeatureSectoin';
+import FaqSection from './components/Faqsection';
+import Question from './components/Question';
+import Footer from './components/Footer';
 
 const App = () => {
   const features = [
@@ -40,7 +46,7 @@ const App = () => {
       <Navbar />
       <Hero />
       
-      <div className="p-20 text-center">
+      <div className="p-18 text-center">
         <h1 className="font-bold text-3xl tracking-wider mb-12">
           TinyURL Plans Include:
         </h1>
@@ -51,6 +57,12 @@ const App = () => {
           ))}
         </div>
       </div>
+      <Hero2 />
+      <FeaturesSection />
+      <Hero3 />
+      <FaqSection />
+      <Question />
+      <Footer />
     </div>
   );
 };
