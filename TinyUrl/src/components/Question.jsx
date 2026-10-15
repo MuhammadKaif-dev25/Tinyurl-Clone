@@ -12,7 +12,7 @@ const Question = () => {
       <div className="flex font-medium text-lg mt-8 gap-5 text-center">
 
        <a href="#" className="bg-white text-black py-1.5 px-3 rounded-md">View Plans</a>
-       <a href="#" className="bg-[#0d7693] py-1.5 px-3 rounded-md">Create Free Account</a>
+       <a href="#" className="bg-[#0d7693] text-white py-1.5 px-3 rounded-md">Create Free Account</a>
         
       </div>
     </div>
