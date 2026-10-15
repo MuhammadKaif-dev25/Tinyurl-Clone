@@ -52,7 +52,7 @@ const faqs = [
     );
   }
   
-  export default function FaqSection() {
+  export default function Faqsection() {
     return (
       <section className="bg-[#F9FAFC] text-[#1a1a1a] px-6 py-16 md:px-16">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] items-center gap-10">
