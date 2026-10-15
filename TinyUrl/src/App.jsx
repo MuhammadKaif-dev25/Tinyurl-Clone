@@ -5,7 +5,7 @@ import Plans from './components/Plans';
 import Hero2 from './components/Hero2';
 import Hero3 from './components/Hero3';
 import FeaturesSection from './components/FeatureSectoin';
-import FaqSection from './components/Faqsection';
+import Faqsection from './components/Faqsection';
 import Question from './components/Question';
 import Footer from './components/Footer';
 
@@ -60,7 +60,7 @@ const App = () => {
       <Hero2 />
       <FeaturesSection />
       <Hero3 />
-      <FaqSection />
+      <Faqsection />
       <Question />
       <Footer />
     </div>
