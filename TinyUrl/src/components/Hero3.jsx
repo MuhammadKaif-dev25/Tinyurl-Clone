@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero3Left from './Hero3Left'
-import Hero3Right from './Hero3RIght'
+import Hero3Right from './Hero3Right'
 
 const Hero3 = () => {
   return (
